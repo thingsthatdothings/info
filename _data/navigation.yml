@@ -1,0 +1,10 @@
+# main links links
+main:
+  - title: "Activities"
+    url: /activities/
+  - title: "Resources"
+    url: /resources/
+  - title: "Blog"
+    url: /blog/
+  - title: "Contact"
+    url: /contact/

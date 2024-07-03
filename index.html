@@ -1,0 +1,110 @@
+---
+layout: archive
+author_profile: false
+
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  actions:
+    - label: "Activities"
+      url: "/activities/"
+      class: "btn--primary"
+    - label: "Resources"
+      url: "resources"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "Hey Calgary! Eat. Pray. Get into a good university."
+intro: 
+  - excerpt: 'You need more than good marks to get into a good school.  You have to show that you are well rounded individual, involved in the community, and can demonstrate leadership abilities.'
+feature_row:
+  - image_path: assets/images/unsplash-gallery-image-2-th.jpg
+    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    alt: "placeholder image 1"
+    title: "Resumes"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Soft Skills"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    title: "Passion Project"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row2:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Leadership Opportunities"
+    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row3:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Scholarships"
+    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row4:
+  - image_path: assets/images/unsplash-gallery-image-2-th.jpg
+    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    alt: "placeholder image 1"
+    title: "Tools"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Universities"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    title: "Other"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row id="feature_row2" type="left" %}
+
+{% include feature_row id="feature_row3" type="right" %}
+
+{% include feature_row %}
+
+{% include feature_row id="feature_row4" %}
+
+<script>
+    var style = document.createElement('style');
+    style.innerHTML = `
+        #main > div {
+          margin-top: -1rem;
+        }
+        .archive__item-body:first-child {
+          margin: 2em 1em 2em 0;
+          padding-left: 1em;
+          padding-right: 1em;
+          font-style: italic;
+          border-left: 0.25em solid #f21368;
+          width: 100%;
+        }
+        .btn--light-outline {
+          border: 0.05em solid #f21368;
+        }
+    `;
+    document.head.appendChild(style);
+</script>
