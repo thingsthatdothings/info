@@ -28,7 +28,7 @@ collection: activities
     <tbody>
         {% for post in site.activities %}
         <tr>
-          <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+          <td><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></td>
           <td>{{ post.description }}</td>
           <td>{{ post.tags }}</td>
           <td>{{ post.dates }}</td>
