@@ -42,4 +42,4 @@ reviews:
 <cite>Anonymous</cite> --- June 2024
 {: .small}
 
-<div markdown="0"><a href="/contact/" class="btn">Add Review</a></div>
+<div markdown="0"><a href="{{site.baseurl}}/contact" class="btn">Add Review</a></div>

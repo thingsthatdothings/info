@@ -9,7 +9,7 @@ download repo and run locally
 
 Docs:
 https://mmistakes.github.io/minimal-mistakes/docs/
---> use remote theme
+
 
 To disable sidebar, add author_profile: false
 classes: wide
@@ -44,6 +44,8 @@ Added dates to posts in _includes\page__meta.html:
         <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y " }}</time>&emsp;
         {% endif %}
 
+To test comments in DEV:
+$Env:JEKYLL_ENV = "production"; bundle exec jekyll serve
 
 -------------------------------------------------
 
