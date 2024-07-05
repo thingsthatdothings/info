@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 ---
 
-Pad out your resume with Soft Skills.  Maybe you'll even learn how to work well with others, be a great team player, and learn leadership skills.
+Pad out your resume with Soft Skills.  Take the free courses (scan+next) or watch the videos (2x speed). Maybe you'll learn how to work well with others, be a great team player, and learn leadership skills.
 
 # Linked In
 - [Soft Skills](https://www.linkedin.com/learning/search?keywords=soft+Skills&upsellOrderOrigin=default_guest_learning&trk=learning-topics_learning-search-bar_search-submit&didUpdateFilters=true&sortBy=RELEVANCE&entityType=LEARNING_PATH)
