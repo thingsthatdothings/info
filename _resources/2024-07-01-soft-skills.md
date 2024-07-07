@@ -32,7 +32,7 @@ Pad out your resume with Soft Skills.  Take the free courses (scan+next) or watc
 
 # TED
 - [The Way We Work Series](https://www.youtube.com/playlist?list=PLOGi5-fAu8bFhSzuOjTmHJwLHUxxIoGr4)
-
+- leaders and thinkers offer practical wisdom and insight into how we can adapt and thrive amid changing workplace conventions
 
 - [How to Have a Good Conversation - Celeste Headlee](https://www.youtube.com/watch?v=H6n3iNh4XLI)
     - Notes from video:
@@ -49,12 +49,15 @@ Pad out your resume with Soft Skills.  Take the free courses (scan+next) or watc
             - No man ever listened his way out of a job – Calvin Coolidge.
         10. Be brief. 
             - A good conversation is like a mini skirt; short enough to maintain interest, but long enough to cover the subject.
+        
+        
         - Be interested in other people.
         - Everyone has some hidden amazing thing about them.
         - Go out, talk to people and prepare to be amazed.
 
 # Google
 - [Applied Digital Skills](https://www.youtube.com/@googlesapplieddigitalskill8678)
+    -  digital skills students need to succeed in the classroom and on the job, from creating a resume, to conducting online research, to starting your own business
     - Planning and Project Management
     - Workplace Communication
     - Starting a Business
@@ -76,3 +79,7 @@ Pad out your resume with Soft Skills.  Take the free courses (scan+next) or watc
         - Develop innovative solutions that leverage differences and satisfy all key stakeholders.
     - Habit 7: Sharpen the Saw
         - Increase motivation, energy, and work/life balance by making time for renewing activities.
+
+# Harvard
+[The Harvard Business Review Guide](https://www.youtube.com/playlist?list=PLzAU8TPKsJubWRHWvE6KaCZ_Bi0NdDB9C)
+- Short, definitive takes on foundational business and work topics
