@@ -1,0 +1,586 @@
+---
+layout: splash
+author_profile: false
+permalink: /scholarships/
+---
+
+{% include breadcrumbs.html %}
+
+<br />
+<h1>Scholarships</h1>
+<p>Don't leave money on the table.</p>
+<p>Make a spreadsheet. Watch the deadlines. Apply, apply, apply.</p>
+<p>Some people treat applying for scholarships as a job - will you?</p>
+<p>Note: The below list is only a fraction of scholarships available. Search the web for more. </p>
+<br />
+<hr />
+
+<h2>Scholarship Databases</h2>
+<p>Sign up. You'll get spam, but you might get a scholarship out of it, so maybe its worth it.</p>
+<ul>
+    <li><a href="educationmatters.ca">https://www.educationmatters.ca/students/student-awards//</a></li>
+    <li><a href="scholarshipscanada">https://www.scholarshipscanada.com/</a></li>
+    <li><a href="scholartree.ca">https://scholartree.ca/</a></li>
+    <li><a href="yconic.com">https://yconic.com/</a></li>
+    <li><a href="studentawards.com">https://studentawards.com/</a> (same as above?)</li>
+    <li><a href="youthofcanada.ca/">https://www.youthofcanada.ca/scholarships</a></li>
+</ul>
+
+<h2>High Profile Scholarships</h2>
+
+<table id="scholarships-table" class="display" width="100%">
+    <thead>
+        <tr>
+            <th>Name/Provider</th>
+            <th>Value</th>
+            <th>Quantity</th>
+            <th>Type</th>
+            <th>Details</th>
+            <th>Dates</th>
+        </tr>
+    </thead>
+</table>
+
+<script>
+
+    const dataSet = [
+        {
+            'name': 'Schulich Leader',
+            'url': 'https://schulichleaders.com/',
+            'value': '$120,000',
+            'quantity': '100',
+            'type': 'Leadership, Grades',
+            'details': `Academic excellence, AND Leadership, charisma and creativity. STEM.
+High school selects one student to be their Schulich Leader Nominee
+Nominee completes a separate Schulich Leader scholarship application`,
+            'date': `January 30, 2024 – Deadline for school to submit a Nominee
+February 20, 2024– Deadline for Nominee to submit Schulich Leader scholarship application
+June 15, 2024 – Scholarship winners finalized`
+        },
+        {
+            'name': 'Loran Scholar',
+            'url': 'https://loranscholar.ca/',
+            'value': '$100,000',
+            'quantity': '36',
+            'type': 'Leadership, Grades',
+            'details': `Present a minimum cumulative average of 85%.
+leadership, service, and character`,
+            'date': 'Open Early Sept, closes October 15, 2024'
+        },
+        {
+            'name': 'TD',
+            'url': 'https://www.td.com/ca/en/personal-banking/solutions/student-banking/community-leadership-scholarship-for-canadians',
+            'value': '$70,000',
+            'quantity': '20',
+            'type': `Leadership`,
+            'details': `demonstrated consistent and outstanding dedication to helping improve the world by solving a social or community problem`,
+            'date': 'Opens Sept 2024'
+        },
+        {
+            'name': 'Scotia',
+            'url': 'https://www.scotiabank.com/ca/en/personal/bank-accounts/students/scholarship-contest.html',
+            'value': '$30,000',
+            'quantity': '1',
+            'type': `Contest Entry`,
+            'details': `additional entries for members`,
+            'date': 'January 31st, 2024'
+        },
+        {
+            'name': 'BMO',
+            'url': 'https://studentawards.com/scholarships/bmo-student-award/',
+            'value': '$10,000',
+            'quantity': '1',
+            'type': `contest entry`,
+            'details': `13+`,
+            'date': 'Dec 2023'
+        },
+        {
+            'name': 'TC Energy',
+            'url': 'https://www.tcenergy.com/community-giving/scholarships/Canada-En/',
+            'value': '$5,000',
+            'quantity': '200',
+            'type': `Leadership, Volunteerism`,
+            'details': `demonstrate a strong commitment to their community through volunteerism, leadership or other community involvement`,
+            'date': 'Opens Jan 2025'
+        },
+        {
+            'name': 'Telus',
+            'url': 'https://www.friendlyfuture.com/en/foundation/social-impact-bursary',
+            'value': '$5,000',
+            'quantity': '200',
+            'type': `Fin Need, Social Impact`,
+            'details': `Reviews first 400 applications`,
+            'date': 'Opens Spring, 2024'
+        },
+        {
+            'name': 'Cenovus',
+            'url': 'https://www.cenovus.com/Careers/Students-and-new-grads/STEM-Scholarship',
+            'value': '$5,000',
+            'quantity': '100',
+            'type': `STEM`,
+            'details': ``,
+            'date': 'Opens in Spring'
+        },
+        {
+            'name': 'Amazon',
+            'url': 'https://www.scholarshipscanada.com/Scholarships/85308/Amazon-Future-Engineers',
+            'value': '$30,000',
+            'quantity': 'unknown',
+            'type': `STEM, Fin Need?`,
+            'details': `unknown`,
+            'date': 'April?'
+        },
+        {
+            'name': 'Ted Rogers Legacy Scholarship',
+            'url': 'https://about.rogers.com/our-impact/ted-rogers-scholarships/',
+            'value': '$100,000',
+            'quantity': '10',
+            'type': `STEM`,
+            'details': `Only first 500 submitted applications will be accepted for review`,
+            'date': 'Opens in May?'
+        },
+        {
+            'name': 'Ted Rogers Future Leader Scholarship',
+            'url': 'https://about.rogers.com/our-impact/ted-rogers-scholarships/',
+            'value': '$26,800',
+            'quantity': '100',
+            'type': `Leadership`,
+            'details': `Only first 600 submitted applications will be accepted for review`,
+            'date': 'Opens in May?'
+        },
+        {
+            'name': 'Ted Rogers Entrance Scholarship',
+            'url': 'https://about.rogers.com/our-impact/ted-rogers-scholarships/',
+            'value': '$2,000',
+            'quantity': '500',
+            'type': `Grades`,
+            'details': `Only first 800 submitted applications will be accepted for review`,
+            'date': 'Opens in May?'
+        },
+        {
+            'name': 'Alberta Credit Unions',
+            'url': 'https://albertacreditunions.com/be-ready/student-life/future-leader-of-alberta-scholarship/',
+            'value': '$5,000',
+            'quantity': '50?',
+            'type': `Contest?`,
+            'details': `18+`,
+            'date': 'unknown'
+        },
+        {
+            'name': "Canada's Luckiest Student",
+            'url': 'https://studentlifenetwork.55rush.com/',
+            'value': '$20,000',
+            'quantity': '1',
+            'type': `Contest Entry`,
+            'details': `14+`,
+            'date': 'June 2025'
+        },
+        {
+            'name': 'CIBC',
+            'url': 'https://www.cibc.com/en/student/scholarships-and-contests/full-ride.html',
+            'value': '$35,000',
+            'quantity': '1',
+            'type': `Contest Entry`,
+            'details': `must be a CIBC member over 16yrs, either setup an account or do a referral`,
+            'date': 'December 31, 2024'
+        },
+        {
+            'name': 'CIBC',
+            'url': 'https://www.scholarshipscanada.com/Scholarships/59952/CIBC-National-Scholarship',
+            'value': '$25,000',
+            'quantity': '1',
+            'type': `STEM`,
+            'details': `Waterloo only`,
+            'date': 'Feb 2025?'
+        },
+        {
+            'name': 'Terry Fox',
+            'url': 'https://terryfoxawards.ca/applicant-information/',
+            'value': '$28,000',
+            'quantity': '20',
+            'type': `Leadership, Volunteerism`,
+            'details': `Involved in voluntary humanitarian activities`,
+            'date': 'Opens November 1st, 2024'
+        },        
+        {
+            'name': 'nshss',
+            'url': 'https://www.nshss.org/scholarships/s/nshss-james-w-lewis-collegiate-global-leader-scholarship-2024/',
+            'value': '$5,000',
+            'quantity': '5',
+            'type': `Essay, Leadership, Volunteerism, Inclusion, etc.`,
+            'details': `any year in high school can apply, educator recommendation reference required`,
+            'date': 'Opens: April 9, 2024; Closes August 8, 2024 '
+        },
+        {
+            'name': 'Sun Life',
+            'url': 'https://www.sunlifeglobalinvestments.com/en/about-us/livebright-scholarship-program/',
+            'value': '$2,000',
+            'quantity': '5',
+            'type': `Leadership`,
+            'details': `demonstrate leadership in their communities, understand the importance of planning for retirement - no matter the age, and strive to achieve academic success`,
+            'date': 'Opens spring 2025'
+        },
+        {
+            'name': 'Sobeys',
+            'url': 'https://yconic.55rush.com/foodforthought',
+            'value': '$2,000',
+            'quantity': '1',
+            'type': `Contest Entry`,
+            'details': `16+`,
+            'date': 'Opens spring 2025?'
+        },
+        {
+            'name': 'Johnson Ins / Belairdirect ',
+            'url': 'https://www.johnson.ca/scholarship',
+            'value': '$1,000',
+            'quantity': '50',
+            'type': `Volunteerism`,
+            'details': `have family who has a home or auto policy through Johnson`,
+            'date': 'July 31, 2024'
+        },
+        {
+            'name': 'Google',
+            'url': 'https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship',
+            'value': '$5,000',
+            'quantity': 'unknown',
+            'type': `Leadership, Grades, Inclusion, STEM`,
+            'details': `Only first 1250 submitted applications will be reviewed`,
+            'date': 'April 23, 2024'
+        },
+        {
+            'name': 'SGI Corporate Scholarship',
+            'url': 'https://sgi.sk.ca/scholarships/',
+            'value': '$2,500',
+            'quantity': '7',
+            'type': `Grades?`,
+            'details': `proof of enrollment required`,
+            'date': 'July 1 – September 30'
+        },
+        {
+            'name': 'Fraser Institute',
+            'url': 'https://www.fraserinstitute.org/education-programs/students/essay-contest',
+            'value': '$1,500',
+            'quantity': '1',
+            'type': `Essay`,
+            'details': ``,
+            'date': 'Opens early 2025'
+        },
+        {
+            'name': 'Energy Rates',
+            'url': 'https://energyrates.ca/energyrates-ca-scholarship/',
+            'value': '$500',
+            'quantity': '1',
+            'type': `Essay`,
+            'details': ``,
+            'date': 'January 31st 2024'
+        },
+        {
+            'name': 'Cooke Family',
+            'url': 'https://www.educationmatters.ca/awards/calgarians-improving-society-award/',
+            'value': '$10,000',
+            'quantity': '1',
+            'type': `Community, Fin Need`,
+            'details': `Calgary institution and must submit proof of financial need.`,
+            'date': 'May 1'
+        },
+        {
+            'name': 'Flames',
+            'url': 'https://www.educationmatters.ca/awards/calgary-flames-foundation-community-involvement-scholarship/',
+            'value': '$2,000',
+            'quantity': '4',
+            'type': `Leadership, Volunteerism`,
+            'details': `Essay`,
+            'date': 'May 30'
+        },
+        {
+            'name': 'Burger King',
+            'url': 'https://www.burgerkingfoundation.org/programs/burger-king-sm-scholars',
+            'value': '$1,000',
+            'quantity': '30 or 1?',
+            'type': `Community, Work Exp`,
+            'details': `First 50,000 applications. work experiences and involvement in school and community activities`,
+            'date': 'Opens Oct 2024'
+        },
+        {
+            'name': 'Education Matters',
+            'url': 'https://www.educationmatters.ca/awards/educationmatters-future-leaders-award/',
+            'value': '$1,000',
+            'quantity': '1',
+            'type': `Leadership`,
+            'details': `Essay, ref letter required`,
+            'date': 'May 30'
+        },
+        {
+            'name': 'Hardy Memorial',
+            'url': 'https://www.educationmatters.ca/awards/pamela-jane-hardy-memorial-award/',
+            'value': '$2,500',
+            'quantity': '1',
+            'type': `Math, Athletics`,
+            'details': `Essay`,
+            'date': 'May 30'
+        },
+        {
+            'name': 'Singleton Award',
+            'url': 'https://www.educationmatters.ca/awards/richard-r-and-linda-a-singleton-education-fund-award/',
+            'value': '$2,000',
+            'quantity': '1',
+            'type': `Fin Need`,
+            'details': `Essay`,
+            'date': 'May 30'
+        },
+        {
+            'name': 'Southland Transport',
+            'url': 'https://www.educationmatters.ca/awards/southland-transportation-integrity-scholarship/',
+            'value': '$2,000',
+            'quantity': '1',
+            'type': `Community`,
+            'details': ``,
+            'date': 'May 30'
+        },
+        {
+            'name': 'Tenaris',
+            'url': 'https://www.educationmatters.ca/awards/tenaris-merit-awards/',
+            'value': '$1,000',
+            'quantity': '1',
+            'type': `STEM, grades`,
+            'details': ``,
+            'date': 'May 30'
+        },
+        {
+            'name': 'SOS Kids',
+            'url': 'https://soskids.ca/5000-scholarship-yearly-bursary',
+            'value': '$5,000',
+            'quantity': '1',
+            'type': `Essay / Media`,
+            'details': `13+, safety related`,
+            'date': 'Dec 31st'
+        },
+        {
+            'name': 'Remax',
+            'url': 'https://blog.remax.ca/quest-for-excellence/',
+            'value': '$1,000',
+            'quantity': '40',
+            'type': `Community`,
+            'details': `Essay`,
+            'date': 'Opens September 13th, 2024'
+        },
+        {
+            'name': 'Platform Calgary',
+            'url': 'https://www.platformcalgary.com/program/10x-future-founders-scholarship',
+            'value': '$1,000',
+            'quantity': '10',
+            'type': `Tech`,
+            'details': `Grade 11's - teacher/mentor nominated `,
+            'date': 'June 2024'
+        },
+        {
+            'name': 'Dalton Camp',
+            'url': 'https://friends.ca/daltoncamp/',
+            'value': '$2,500',
+            'quantity': '1',
+            'type': `Essay`,
+            'details': `anyone can enter`,
+            'date': 'October 30, 2023 and January 8, 2024'
+        },
+        {
+            'name': 'Barron Prize',
+            'url': 'https://barronprize.org/',
+            'value': '$10,000',
+            'quantity': '15',
+            'type': `Leadership`,
+            'details': `create and lead a project`,
+            'date': 'Open Jan 2025'
+        },
+        {
+            'name': 'connectFirst Credit Union',
+            'url': 'https://www.connectfirstcu.com/en/about/community/stem-scholarship',
+            'value': '$650',
+            'quantity': '4',
+            'type': `STEM`,
+            'details': `Must be a current member of connectFirst Credit Union`,
+            'date': 'July 15 to August 19'
+        },
+        {
+            'name': 'Bow Valley Credit Union',
+            'url': 'https://www.bowvalleycu.com/en/bvcu/our-communities/scholarships',
+            'value': '$2,000',
+            'quantity': '3',
+            'type': `Community`,
+            'details': ``,
+            'date': 'August 31, 2024'
+        },
+        {
+            'name': 'CIBC 99 scholarships',
+            'url': 'https://studentlifenetwork.55rush.com/99scholarships?ref=sln-hq',
+            'value': '$30,000',
+            'quantity': '15',
+            'type': `Contest Entry`,
+            'details': `16+ - multiple categories`,
+            'date': 'March 2 2024 to October 31, 2024'
+        },
+        {
+            'name': 'TKS',
+            'url': 'https://yconic.55rush.com/tks',
+            'value': '$2,000',
+            'quantity': '1',
+            'type': `contest entry`,
+            'details': `13+`,
+            'date': 'May 31, 2024'
+        },
+        {
+            'name': 'Sobeys',
+            'url': 'https://yconic.55rush.com/foodforthought',
+            'value': '$2000',
+            'quantity': '1',
+            'type': `contest entry`,
+            'details': `16+`,
+            'date': 'April 30, 2024'
+        },
+        {
+            'name': 'Unilever',
+            'url': 'https://yconic.55rush.com/voicesforchange',
+            'value': '$2,000',
+            'quantity': '1',
+            'type': `contest entry`,
+            'details': `16+`,
+            'date': 'August 22nd 2024'
+        },
+        {
+            'name': '“Goodwill Industries of Alberta',
+            'url': 'https://yconic.55rush.com/goodwill',
+            'value': '$2,500',
+            'quantity': '1',
+            'type': `contest entry`,
+            'details': `14+`,
+            'date': 'October 18 2024'
+        },
+        {
+            'name': 'Eon Essay',
+            'url': 'https://www.eonessaycontest.com/',
+            'value': '$2,000',
+            'quantity': '10',
+            'type': `Essay`,
+            'details': `read book first?`,
+            'date': 'June 15, 2024'
+        },
+        {
+            'name': 'Pivotal',
+            'url': 'https://pivotalcontest.org/',
+            'value': '$3,000',
+            'quantity': '3',
+            'type': `Essay`,
+            'details': ``,
+            'date': 'October 17, 2023'
+        },
+        {
+            'name': 'Embark',
+            'url': 'https://studentawards.com/scholarships/embark-15000-resp-contest/',
+            'value': '$15,000',
+            'quantity': '1',
+            'type': `Contest Entry`,
+            'details': `13+`,
+            'date': 'December 31, 2024'
+        },
+        {
+            'name': 'Neo',
+            'url': 'xxxx',
+            'value': '$25,000',
+            'quantity': '1',
+            'type': `Contest Entry`,
+            'details': `open or have an account, min $100`,
+            'date': 'April 30, 2025'
+        },
+        {
+            'name': 'GoTranscript',
+            'url': 'https://studentawards.com/scholarships/gotranscript-academic-scholarship-program/',
+            'value': '$5000',
+            'quantity': '1',
+            'type': `Essay`,
+            'details': `must use university email (enrolled)`,
+            'date': 'Spring and Fall semesters'
+        },
+        {
+            'name': 'P&G',
+            'url': 'https://www.pggoodeveryday.ca/tidescholarship/',
+            'value': '$10,000',
+            'quantity': '15',
+            'type': `contest entry`,
+            'details': `17+, enrolled in university`,
+            'date': 'Sept 30, 2024'
+        }
+        ,
+        {
+            'name': 'Energy Creates',
+            'url': 'https://www.energycreates.com/',
+            'value': '$100,000',
+            'quantity': '5',
+            'type': `Essay or Art`,
+            'details': `15+, watch film`,
+            'date': 'August 31, 2024'
+        }
+    ];
+
+    let table = new DataTable('#scholarships-table', {
+        columns: [
+            {
+                data: 'name',
+                render: function (data, type, row) {
+                    return '<a href="' + row.url + '" target="_blank">' + data + '</a>';
+                }
+            },
+            { data: 'value' },
+            { data: 'quantity' },
+            { data: 'type' },
+            { data: 'details' },
+            { data: 'date' }
+        ],
+        data: dataSet,
+        order: [[1, 'desc']],
+        select: true,
+        lengthMenu: [5, 10, 25, { label: 'All', value: -1 }]
+    });
+
+    $('head').append('<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">');
+
+
+    $('#scholarships-table').on('click', 'tbody tr', function () {
+        var data = table.row(this).data();
+        window.location.href = data['url'];
+    });
+
+    var style = document.createElement('style');
+    style.innerHTML = `
+        colgroup {
+            display: table-row;
+        }
+        option {
+            background-color: black;
+        }
+        .dt-length, .dt-search {
+            display: inline-flex;
+        }
+        #scholarships-table tbody tr:hover {
+            background-color: #222222;
+            cursor: pointer;
+        }
+        #main > article > section > nav > ol {
+            float: left;
+        }
+        .breadcrumbs {
+            padding-inline: unset;
+        }
+        #main > article > section > nav > ol > span {
+            visibility: hidden;
+            position: relative;
+        }
+
+        #main > article > section > nav > ol > span:after {
+            visibility: visible;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "/Scholarships";
+        }
+    `;
+    document.head.appendChild(style);
+</script>
