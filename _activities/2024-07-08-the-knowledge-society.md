@@ -21,14 +21,17 @@ reviews:
 
 ### More Info
 - [https://www.tks.world/](https://www.tks.world/)
+- See [TKS Playbooks here](https://tksworld.notion.site/TKS-LIFE-70b0af219ec14c6e88d4e0ac5c1cb034)
+  - useful even if you can't attend the program
 
 ### Pros
 - Long program with a consistent timeline
 - Great for building connections with experts and like-minded peers
+- [OCIF grant in 2024](https://www.calgaryeconomicdevelopment.com/newsroom/ocif-invests-in-the-knowledge-society-to-develop-the-workforce-of-the-future/)
 
 ### Cons
 - Decently long application and interview
-- Lots of individual work
+- Lots of individual work (you get what you put in)
 - High cost to enroll if no scholarship is given
 
 ### Reviews

@@ -50,4 +50,20 @@ $(document).ready(function () {
         lastScrollTop = st;
     }
 
+
+    // Enabling blocked text selection using JavaScript
+    // document.body.onselectstart = function() {return true;};
+    // document.styleSheets[0].insertRule("* { user-select:text !important }", 1);
+
+    // (function() {
+    //     'use strict';
+      
+    //     let style = document.createElement('style');
+    //     style.innerHTML = `*{
+    //         -webkit-user-select: text !important;
+    //         user-select: text !important; 
+    //     }`;
+      
+    //     document.body.appendChild(style);
+    //   })();
 });

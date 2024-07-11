@@ -6,4 +6,3 @@ permalink: /blog/
 collection: blog
 ---
 
-Sample document listing for the collection `_blog`.
